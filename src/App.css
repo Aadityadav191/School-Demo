@@ -1,0 +1,23 @@
+.body{
+    background-color: #e8f5e9; /* Light green background */
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .card {
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .text-success {
+    color: #2e7d32 !important; /* Dark green for text */
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
