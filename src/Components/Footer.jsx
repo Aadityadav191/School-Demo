@@ -9,7 +9,7 @@ export default function Footer() {
 
           {/* School Info */}
           <div className="col-md-4 mb-4">
-            <h5 className="fw-bold">Green Valley School</h5>
+            <h5 className="fw-bold">AKSHARAA  School</h5>
             <p>Empowering young minds for a brighter tomorrow.</p>
             <p><strong>Address:</strong><br />
               123 Education Lane,<br />
@@ -47,7 +47,7 @@ export default function Footer() {
 
         {/* Footer Bottom */}
         <div className="text-center mt-4 border-top pt-3">
-          <small>&copy; {new Date().getFullYear()} Green Valley School. All rights reserved.</small>
+          <small>&copy; {new Date().getFullYear()} AKSHARAA  School. All rights reserved.</small>
         </div>
       </div>
     </footer>

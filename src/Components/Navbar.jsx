@@ -1,38 +1,97 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-success px-4 sticky-top shadow-sm">
-      <Link className="navbar-brand fw-bold" to="/">Green Vally</Link>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm py-3">
+      <div className="container">
+        
+        {/* Logo */}
+        <Link className="navbar-brand fw-bold fs-4" to="/">
+          🌿 AKSHARAA 
+        </Link>
 
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li className="nav-item">
-            <NavLink to="/" className="nav-link" end>Home</NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink to="/about" className="nav-link">About</NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink to="/services" className="nav-link">Services</NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink to="/profile" className="nav-link">Profile</NavLink>
-          </li>
-        </ul>
+        {/* Toggle Button */}
+        <button
+          className="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
 
-        {/* Login Button */}
-        <div className="d-flex ms-lg-3">
-          <button className="btn btn-outline-light">Login</button>
+        {/* Menu */}
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav mx-auto gap-lg-3 text-center">
+            
+            <li className="nav-item">
+              <NavLink
+                to="/"
+                end
+                className={({ isActive }) =>
+                  isActive ? "nav-link active fw-semibold" : "nav-link"
+                }
+              >
+                Home
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active fw-semibold" : "nav-link"
+                }
+              >
+                About
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink
+                to="/services"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active fw-semibold" : "nav-link"
+                }
+              >
+                Services
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink
+                to="/Contact"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active fw-semibold" : "nav-link"
+                }
+              >
+                Contact
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink
+                to="/academics"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active fw-semibold" : "nav-link"
+                }
+              >
+                Academics
+              </NavLink>
+            </li>
+
+          </ul>
+
+          {/* Right Side Buttons */}
+          <div className="d-flex gap-2">
+            <button className="btn btn-outline-light px-3">
+              Login
+            </button>
+            <button className="btn btn-light text-success fw-semibold px-3">
+              Sign Up
+            </button>
+          </div>
         </div>
       </div>
     </nav>
