@@ -24,7 +24,7 @@ export default function Footer() {
               <li><Link to="/" className="text-white text-decoration-none">Home</Link></li>
               <li><Link to="/about" className="text-white text-decoration-none">About</Link></li>
               <li><Link to="/services" className="text-white text-decoration-none">Services</Link></li>
-              <li><Link to="/profile" className="text-white text-decoration-none">Profile</Link></li>
+              <li><Link to="/academics" className="text-white text-decoration-none">Academics</Link></li>
             </ul>
           </div>
 
